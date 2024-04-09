@@ -56,6 +56,7 @@ public class PostService {
             toUpdate.setText(updatePost.getText());
             toUpdate.setTitle(updatePost.getTitle());
             postRepository.save(toUpdate);
+            return toUpdate;
         }
         return null;
     }
