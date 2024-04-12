@@ -6,11 +6,13 @@ import com.developer.entities.User;
 import com.developer.repositories.LikeRepository;
 import com.developer.requests.LikeCreateRequest;
 import com.developer.responses.LikeResponse;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class LikeService {
 
     private LikeRepository likeRepository;
